@@ -1,0 +1,26 @@
+body {
+    font-size: 18px;
+}
+
+.top_header {
+    width: 50%; /* Largeur */
+    height: 50%; /* Hauteur */
+}
+
+/* em prend en compte la taille définié dans le parent */
+/* rem prend en compte la taille définie dans le HTML par le navigateur */
+
+div {
+    background-color: seagreen;
+    height: 10em;
+    width: 30%;
+}
+
+section {
+    width: 60%;
+    height:250px;
+    border: 2px solid blue;
+    padding: 50px 25px; /* Marge externe du bloc. padding: "haut et bas"px "droite et gauche"px . Il peut y en avoir quatre, dans l'ordre : haut, droite, bas, gauche */
+    margin: auto; /* Marge interne du bloc */
+    overflow: scroll; /* visible, hidden, scroll ou auto ce qui dépasse */
+}

@@ -1,0 +1,46 @@
+h1, h2, p {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+#secondParagraph {
+    color: green;
+}
+
+.titre_principal {
+    color: red;
+    text-align: center;
+} 
+
+
+.text_right {
+    text-align: right;
+}
+
+/* 
+Un commentaire en CSS 
+Sur plusieurs lignes
+*/ 
+
+/* Selecteur universel */
+* {
+    font-size: 16px;
+}
+
+/* A B : Une balise contenue dans une autre */
+ul li {
+    font-size: 24px;
+}
+
+/* A + B : Une balise qui en suit une autre */
+h3 + h4 {
+    color: red;
+    font-size: 34px;
+}

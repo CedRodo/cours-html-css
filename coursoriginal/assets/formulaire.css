@@ -1,0 +1,7 @@
+:required {
+    background-color: red;
+}
+
+:focus {
+    border-color: red;
+}

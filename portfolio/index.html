@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+
+<body>
+    
+    <div class="bckgrd">
+
+    <header class="top_header" id="home">
+
+        <figure class="logo">
+            
+            <img src="images/logo-loup.jpg" alt="logo du site">
+
+        </figure>
+
+        <nav class="menu_nav">
+            
+            <ul class="menu">
+              
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            
+            </ul>
+        
+        </nav>
+
+    </header>
+    
+        <section id="accueil">
+            
+            <h1 class="test"><a href="#apropos">Cédric Rodony</a></h1>
+            <h2><a href="dossier_cv/cv.html">Développeur Web</a></h2>
+        
+        </section>
+
+    </div>
+        
+        <section id="apropos" class="bckgrd2">
+            
+            <h2>À propos</h2>
+            
+            <figure class="avatar">
+
+                <img src="images/photo_avatar.png" alt="photo avatar">
+
+            </figure>
+
+            <div class="infos">
+
+                <p>Je suis Cédric Rodony, apprenti en Développement Web. Bien que plus particulièrement spécialisé dans la maintenance informatique, la conception de sites internet a toujours éveillé ma curiosité. Tel un spectateur désirant devenir à son tour magicien, je souhaite acquérir les compétences pour être Développeur Web.</p><br>
+                <br>
+
+                <ul>
+
+                    <li>Date de Naissance : 29/12/1982</li><br>
+                    <li>Adresse : 11, rue du Berry 94550 Chevilly-Larue</li><br>
+                    <li>Mail : cedric.rodony@gmail.com</li><br>
+                    <li>Téléphone : 06 52 39 26 40</li><br>
+
+                </ul>
+
+                <button><a href="dossier_cv/cv.html">Mon CV</a></button>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="bckgrd3">
+
+        <h2>Contact</h2>
+
+        <div class="contact-flex">
+
+            <div class="map">
+ 
+                    <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=fr&amp;q=stalindgrad%20villejuif+(Le%20Nom%20de%20mon%20Entreprise)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" frameborder="0"><a href="https://www.gps.ie/golf-gps/">golf gps</a></iframe>
+
+            </div>
+            
+        <div class="coordonnees">
+
+            <p>Vous pouvez remplir ce formulaire avec vos coordonnées pour me contacter ou me joindre directement par téléphone ou mail dans <a href="#apropos">À Propos</a></p><br>
+
+            <form method="post" action="traitement_formulaire.php">
+
+                <p>
+                    <input type="text" name="nom" id="nom" size="30" placeholder="Prénom Nom" required />
+                </p>
+                    
+                <p>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required />
+                </p>
+                    
+                <p>
+                    <textarea name="message" id="message" cols="40" rows="10"></textarea>
+                </p>
+
+            </form>
+
+            <br>
+
+            <button type="submit">Envoyer</button>
+            
+        </div>
+                
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

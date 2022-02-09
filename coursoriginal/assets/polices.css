@@ -1,0 +1,50 @@
+/*body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-style: italic;
+    background: url("../images/avatar.png") no-repeat;
+    top: 0;
+}*/
+
+h1 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: initial;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: justify;
+    color: #000000; /* Transparence de couleur */
+    border: 1px black solid;
+    
+}
+
+.lien {
+    text-decoration: none;
+    font-size: 3rem;
+    color: royalblue;
+}
+
+.lien:hover {
+    color: seagreen;
+    font-size: 5rem;
+}
+
+.lien:visited {
+    color: red;
+}
+
+p {
+    text-align: justify;
+    border: 1px black solid;
+    border-radius: 15px 7px;
+    box-shadow: 5px 5px 5px royalblue;
+    /* 1. le décalage horizontal de l'ombre
+       2. Le décalage verticale de l'ombre
+       3. L'adoucissement du dégradé
+       4. La couleur de l'ombre */
+}
+
+h1:hover {
+    font-size: 3rem
+}

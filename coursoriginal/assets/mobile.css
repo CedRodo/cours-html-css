@@ -1,0 +1,130 @@
+* {
+    /* On applique cette propriété pour éviter que les blocs sortent de leur conteneur */
+    box-sizing: border-box;
+}
+
+/* On réinitialise les marges externes et interne */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pour ne pas déformer l'image lorsqu'on la redimensionne */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* On réinialise le margin et padding à 0 et on donne une width de 20% au bloc */
+figure {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+/* On retire le style appliquer par défault par le navigateur sur les liens */
+a {
+    text-decoration: none;
+}
+
+
+
+ul {
+    /* On supprime les puces des listes */
+    list-style-type: none;
+    padding: 0;
+}
+
+/* HEADER */
+
+.top_header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_navigation .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .top_header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    figure {
+        width: 20%;
+    }
+
+    .menu_navigation {
+        width: 80%;
+    }
+
+    .menu_navigation .menu {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* SECTION */
+.header_section {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    min-height: 350px;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    article {
+        width: calc(70% - 25px);
+    }
+
+    aside {
+        width: calc(30% - 25px);
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery div {
+    background-color: aquamarine;
+    height: 300px;
+    width: calc(100% / 4 - 40px);
+    margin: 20px;
+}
+
+/* On sélectionne la 2ème et 3ème div pour leur appliquer
+un style différent des autres div */
+.gallery div:nth-child(2),
+.gallery div:nth-child(3) {
+    background-color: red;
+    order: -1;
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+}

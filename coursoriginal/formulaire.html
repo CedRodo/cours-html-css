@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/formulaire.css">
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form method="post" action="traitement_formulaire.php">
+        <!-- Mettre obligatoirement des balises de type bloc à l'intérieur -->
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+        <p>
+            <label for="prenom">Votre prénom : </label>
+            <input type="text" name="prenom" id="prenom" size="30" placeholder="Merci d'entrer votre prénom" value="Cedric" required  /> <!-- required rend le champs obligatoire -->
+        </p>
+
+        <p>
+            <label for="password">Votre password :</label>
+            <input type="password" name="password" id="password" placeholder="Merci d'entrer votre password" />
+        </p>
+
+        <p>
+            <label for="email">Votre email :</label>
+            <input type="email" name="email" id="email" placeholder="Merci d'entrer votre email" />
+        </p>
+        
+        <p>
+            <label for="tel">Votre téléphone :</label>
+            <input type="tel" name="tel" id="tel" placeholder="Merci d'entrer votre téléphone" />
+        </p>
+        </fieldset>
+        <p>
+            <label for="url">Votre adresse internet :</label>
+            <input type="url" name="url" id="url" placeholder="Merci d'entrer votre adresse internet" />
+        </p>
+
+        <p>
+            <label for="age">Votre âge :</label>
+            <input type="number" name="age" id="age" placeholder="Merci d'entrer votre âge" min="18" max="60" step="2" />
+        </p>
+
+        <p>
+            <label for="range">Range :</label>
+            <input type="range" name="range" id="range" placeholder="Merci d'entrer votre range" min="0" max="100" step="2" />
+        </p>
+
+        <p>
+            <label for="date">Date :</label>
+            <input type="date" name="date" id="date" placeholder="Merci d'entrer votre date de naissance" />
+        </p>
+
+        <p>
+            <label for="couleur">Couleur :</label>
+            <input type="color" name="couleur" id="couleur" />
+        </p>
+
+        <p>
+            <label for="recherche">Recherche :</label>
+            <input type="search" name="recherche" id="recherche" />
+        </p>
+
+        <p>
+            <label for="message">Votre message : </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </p>
+
+        <!-- Les cases à cocher : un choix multiple d'option -->
+        <div>
+            <p>Sélectionner les options désirées :</p>
+            <p>
+                <ul>
+                    <li><input type="checkbox" name="option1" id="option1" checked /> <label for="option1">Option 1</label></lil>
+                    <li><input type="checkbox" name="option2" id="option2" /> <label for="option2">Option 2</label></lil>
+                    <li><input type="checkbox" name="option3" id="option3" /> <label for="option1">Option 3</label></lil>
+                </ul>
+            </p>
+        </div>
+
+        <!-- Les radios : un seul choix à cocher -->
+        <div>
+            <p>Sélectionner les options désirées :</p>
+            <p>
+                <ul>
+                    <li><input type="radio" name="radio" id="radio" /> <label for="radio">Radio 1</label></lil>
+                    <li><input type="radio" name="radio" id="radio" checked/> <label for="radio">Radio 2</label></lil>
+                    <li><input type="radio" name="radio" id="radio" /> <label for="radio">Radio 3</label></lil>
+                </ul>
+            </p>
+        </div>
+
+        <!-- Les options : liste déroulante avec un seul choix à sélectionner -->
+        <div>
+            <p>Sélectionner votre pays :</p>
+            <select name="pays" id="pays">
+                <optgroup label="Europe"> <!-- Permet de regrouper les options par catégorie -->
+                    <option value="France">France</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Espagne">Espagne</option>
+                </optgroup>
+                <optgroup label="Amérique du Nord">
+                    <option value="Canada">Canada</option>
+                    <option value="USA">États-Unis</option>
+                </optgroup>
+            </select>
+        </div>
+        <input type="button" value="Envoyer" />
+        <button type="submit">Envoyer</button>
+        <button type="reset">Réinitialiser</button>
+        <input type="file" name="fichier" id="fichier" />
+
+    </form>
+</body>
+</html>

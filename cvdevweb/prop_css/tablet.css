@@ -1,0 +1,67 @@
+body {
+    margin: 4em;
+}
+
+.floatLeft {
+    float:inline-start;
+}
+
+h2.rightText {
+
+    text-align: right;
+}
+
+.devWeb {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiences {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.formations {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.competences {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.separateur {
+    width: 100%;
+    height: 5em;
+}
+
+p.marginLeft {
+    margin-left: 50px;
+}
+ul.marginLeft {
+    margin-left: 50px;
+}
+
+.header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dessusDessous {
+    display: flex;
+    flex-direction: column;
+}

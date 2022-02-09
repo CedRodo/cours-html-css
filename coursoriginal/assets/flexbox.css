@@ -1,0 +1,81 @@
+* {
+    /* On applique cette propriété pour éviter que les blocs sortent de leur conteneur */
+    box-sizing: border-box;
+}
+
+/* On réinitialise les marges externes et interne */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pour ne pas déformer l'image lorsqu'on la redimensionne */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* On réinialise le margin et padding à 0 et on donne une width de 20% au bloc */
+figure {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+/* On retire le style appliquer par défault par le navigateur sur les liens */
+a {
+    text-decoration: none;
+}
+
+.menu_navigation {
+    width: 70%;
+}
+
+ul {
+    /* On supprime les puces des listes */
+    list-style-type: none;
+}
+
+.top_header {
+    width: 100%;
+    padding: 5px 10%;
+    height: 60px;
+    display: flex; /* On déclare flexbox */
+    align-items: center; /* On aligne au centre sur l'axe vertical */
+    justify-content: space-between; /* On aligne les blocs par rapport au coin droite et gauche de l'écran */
+
+}
+
+.top_header figure img {
+    max-height: 50px; /* On donne une hauteur maximum de 50px */
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* On espace les éléments de manière égals */
+}
+
+section {
+    width: 80%;
+    margin: auto; /* On applique une marge automatique à l'élément */
+    display: flex;
+    flex-wrap: wrap; /* On fait retourner l'élément à la ligne si il n'y a plus de place */
+    justify-content: space-between;
+}
+
+.header_section {
+    width: 100%;
+}
+
+.header_section h1 {
+    text-align: center;
+}
+
+article {
+    width: calc(70% - 25px); /* Calcul pour dire à l'élément tu fais 70% de large moins 25px */
+}
+
+aside {
+    width: calc(30% - 25px);
+}
