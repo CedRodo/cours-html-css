@@ -1,6 +1,6 @@
 <?php require('header.php'); ?>
 <div class="debut">
-<h1>DEBUT DANS HTML/CSS</h1>
+<h1>DÉBUT DANS HTML/CSS</h1>
 
 <p class="contenu">Contenu de code :</p>
 

@@ -12,7 +12,7 @@
 <body>
 <header>
     <nav>  
-    <a href="index.php">ACCUEIL</a> | <a href="cours.php">COURS</a> | <a href="debut.php">DEBUT DANS HTML/CSS</a> | <a href="apropos.php">À PROPOS</a> | <a href="polices.php">POLICES</a> | <a href="formulaires.php">FORMULAIRES</a> | <a href="flexbox.php">FLEXBOX</a> | <a href="cv.php">CV</a> | <a href="portfolio.php">PORTFOLIO</a>
+    <a href="index.php">ACCUEIL </a> | <a href="cours.php"> COURS </a> | <a href="debut.php"> DÉBUT DANS HTML/CSS </a> | <a href="apropos.php"> À PROPOS </a> | <a href="polices.php"> POLICES </a> | <a href="formulaires.php"> FORMULAIRES </a> | <a href="flexbox.php"> FLEXBOX </a> | <a href="cv.php">CV</a> | <a href="portfolio.php">PORTFOLIO</a>
     <br/>
     <hr>
     </nav>
