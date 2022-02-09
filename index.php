@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <div class="accueil">
-<h1>COURS ET EXERCICES DE <span>HTML/CSS</span></h1>
+<h1>COURS ET EXERCICES DE HTML/CSS</h1>
 <img src="./assets/logohtmlcss.png">
 <p>Nous allons pouvoir utiliser ce site pour répertorier et visualiser les différents cours et exercices effectués en HTML et CSS. Ceux-ci sont accessibles via le menu de navigation.
 
