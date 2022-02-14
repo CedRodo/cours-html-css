@@ -185,20 +185,20 @@ box-sizing: border-box;
 } */
 
 /* Pour ne pas déformer l'image lorsqu'on la redimensionne */
-img {
+.styleflexbox img {
     width: 100%;
     height: auto;
 }
 
 /* On réinialise le margin et padding à 0 et on donne une width de 20% au bloc */
-figure {
+.styleflexbox figure {
     margin: 0;
     padding: 0;
     width: 20%;
 }
 
 /* On retire le style appliquer par défault par le navigateur sur les liens */
-a {
+.styleflexbox a {
     text-decoration: none;
 }
 
@@ -231,7 +231,7 @@ ul {
     justify-content: space-around; /* On espace les éléments de manière égals */
 }
 
-section {
+.styleflexbox section {
     width: 80%;
     margin: auto; /* On applique une marge automatique à l'élément */
     display: flex;
@@ -247,17 +247,17 @@ section {
     text-align: center;
 }
 
-article {
+.styleflexbox article {
     width: calc(70% - 25px); /* Calcul pour dire à l'élément tu fais 70% de large moins 25px */
 }
 
-aside {
+.styleflexbox aside {
     width: calc(30% - 25px);
 }
-.styleflexbox h1 { /* pour enlever la bordure de h1 héritée de la feuille CSS externe */
+.styleflexbox h1 {
     border-style: none; 
 }
-.styleflexbox nav { /* pour enlever la couleur en fond de nav héritée de la feuille CSS externe */
+.styleflexbox nav {
     background-color: inherit;
 }
 </style>
