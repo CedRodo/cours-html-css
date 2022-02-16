@@ -1,4 +1,5 @@
-<?php include('header.php'); ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="formulaires">
 <h1 class="bonjour">FORMULAIRES</h1>
 
@@ -257,4 +258,4 @@
 
 </div>
 
-<?php include('footer.php'); ?>
+<?php require 'footer.php'; ?>

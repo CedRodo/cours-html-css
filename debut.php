@@ -1,4 +1,5 @@
-<?php require('header.php'); ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="debut">
 <h1>DÉBUT DANS HTML/CSS</h1>
 
@@ -236,4 +237,4 @@ On va aussi avoir une balise pour <mark>surligner le texte</mark></p>
 </div>
 
 </div>
-<?php require('footer.php'); ?>
+<?php require 'footer.php'; ?>

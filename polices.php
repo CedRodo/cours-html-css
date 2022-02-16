@@ -1,4 +1,5 @@
-<?php require('header.php') ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="polices">
 <h1>POLICES</h1>
 
@@ -151,4 +152,4 @@ background-size: 50%;
 
 </div>
 </div>
-<?php require('footer.php') ?>
+<?php require 'footer.php'; ?>

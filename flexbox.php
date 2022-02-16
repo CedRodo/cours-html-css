@@ -1,4 +1,5 @@
-<?php require('header.php'); ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="flexbox">
 <h1>FLEXBOX</h1>
 <p style="margin: 100px 30px 100px 0px; text-align:end;">Un bon moyen de comprendre le fonctionnement de flexbox est <a class="pdf" href="https://flexboxfroggy.com" target="_blank">Flexbox Froggy<img class="logopdf" src="./assets/favicon.ico" alt="pdf" ></a></p>
@@ -338,4 +339,4 @@ ul {
 
 </body>
 </html>
-<?php require('footer.php'); ?>
+<?php require 'footer.php'; ?>

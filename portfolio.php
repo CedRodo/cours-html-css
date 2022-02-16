@@ -1,4 +1,5 @@
-<?php require('header.php') ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="portfolio">
 <h1>PORTFOLIO</h1>
 <p style="margin: 100px 30px 50px 0px; text-align:end;">Le TP sur le <a class="pdf" href="assets/tp_integration_html5_css3.pdf" target="_blank">portfolio<img class="logopdf" src="./assets/iconpdf.png" alt="pdf" ></a></p>
@@ -392,4 +393,4 @@ input:placeholder-shown {
 
 <p class="resultat">Voir le résultat <a href="./portfolio/index.html" target="_blank">ici</a>.</p>
 
-<?php require('footer.php'); ?>
+<?php require 'footer.php'; ?>

@@ -18,6 +18,7 @@ nav {
     padding-top: 5px;
     margin-left:-20px;
     margin-right:-20px;
+    margin-top: 15px;
     text-align: center;
     background-color: black;
     color: yellow;
@@ -39,10 +40,10 @@ nav a:hover {
 
 h1:first-child {
     text-align: center;
-    width: 100% important;
+    width: 950px !important;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left:-10px;
-    margin-right:-10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 80px;
     font-size: 50px !important;
@@ -58,6 +59,10 @@ p {
 pre {
     font-family: "courier new", courier, monospace;
     font-size: 15px;
+}
+
+.container-htmlcss {
+    min-height: 670px;    
 }
 
 .logopdf {

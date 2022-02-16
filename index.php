@@ -1,10 +1,5 @@
-<?php include('header.php');
-    if (isset($_SESSION['user'])==false) {
-        header('location: backend/identification.php');
-        die;
-    }
-  
-    ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="accueil">
 <h1>COURS ET EXERCICES DE HTML/CSS</h1>
 <img src="http://localhost/monsite/courshtmlcss/assets/logohtmlcss.png">
@@ -17,4 +12,4 @@ Vous pouvez également accéder à d'autres cours :
 <a href ="http://localhost/monsite/coursphp/index.php" target="_blank">PHP</a>
 </p> 
 </div>
-<?php include('footer.php'); ?>
+<?php include 'footer.php'; ?>

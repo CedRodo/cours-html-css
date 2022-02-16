@@ -1,6 +1,7 @@
-<?php require('header.php') ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="cvdevweb">
-<h1>CV DE DÉVELOPPEUR WEB ET WEB MOBILE</h1>
+<h1>CV DE DÉVELOPPEUR WEB MOBILE</h1>
 <p style="margin: 100px 30px 100px 0px; text-align:end;">Le CV est disponible <a class="pdf" href="cvdevweb/index.html" target="_blank">ici</a></p>
 
 <p class="contenu">Contenu de code :</p>
@@ -387,4 +388,4 @@ body {
 
 <p class="resultat">Voir le résultat <a href="./cvdevweb/index.html" target="_blank">ici</a>.</p>
 
-<?php require('footer.php'); ?>
+<?php require 'footer.php'; ?>

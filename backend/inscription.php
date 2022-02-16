@@ -21,18 +21,19 @@ if ( (isset($_POST['prenom'])==true) &&
       bd();
       // Insertion BD
       
-        require_once "Utilisateur.php";
+        require_once "Utilisateurs.php";
 
-        $entry = new Utilisateur;
+        $entry = new Utilisateurs;
         $entry->prenom = $_POST['prenom'];
         $entry->nom = $_POST['nom'];
-        $entry->mdp = $mdp;
-        $entry->mail = $_POST['mail'];
+        $entry->motdepasse = $mdp;
+        $entry->email = $_POST['mail'];
         $entry->age = $_POST['age'];
         $entry->save();
         
         // on va créé une session pour le nouvel inscrit déjà connecté.
-        $_SESSION['user']= $_POST['nom'];
+        $_SESSION['user']= $entry->email;
+        $_SESSION['name']= $entry->prenom." ".$entry->nom;
 
 
 
@@ -45,11 +46,10 @@ if ( isset($_SESSION['user'])==false){
 <?php $_GET['mode']='sub'; require 'formulaire.php'; ?>
  <?php
 }
-else {
-    echo "<p style='color: green;'>Vous êtes déjà connecté</p>";
-}
-
-?>
+else { ?>
+  <p style='color: green;'>Vous êtes connecté.</p>
+  <p>Cliquer <a href="../index.php">ici</a> pour rejoindre l'accueil.</p>
+<?php } ?>
 
 
 <?php include "../footer.php"; ?>

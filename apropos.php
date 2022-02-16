@@ -1,4 +1,5 @@
-<?php require('header.php'); ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="apropos">
 <h1>À PROPOS</h1>
 
@@ -39,5 +40,5 @@
     </figure>
 
 </div>
-<?php require('footer.php'); ?>
+<?php require 'footer.php'; ?>
 

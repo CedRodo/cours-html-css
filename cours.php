@@ -1,4 +1,5 @@
-<?php include('header.php'); ?>
+<?php require 'header.php'; ?>
+<?php if (isset($_SESSION['user'])==false) { header('location: backend/identification.php'); die; } ?>
 <div class="cours">
 <h1>COURS DE PHP</h1>
 <p style="margin: 100px 30px 100px 0px; text-align:end;">Le PDF du cours en HTML est disponible <a class="pdf" href="./assets/courshtml.pdf" target="_blank">ici <img class="logopdf" src="./assets/iconpdf.png" alt="pdf" ></a></p>
@@ -544,4 +545,4 @@ aside {
 </div>
 
 </div>
-<?php include('footer.php'); ?>
+<?php require 'footer.php'; ?>

@@ -19,7 +19,7 @@
      if (isset($_SESSION['name'])==true) { ?>
         <br/>
         <br/>
-        <p class="headerLog" style="font-size: 18px;"> <img src="http://localhost/monsite/coursphp/assets/user.png" alt="nom de l'utilisateur"> Bonjour <?php echo $_SESSION['name'];?> <img src="http://localhost/monsite/coursphp/assets/logout.png" alt="se déconnecter"> <a href="http://localhost/monsite/coursphp/backend/deconnexion.php">Déconnexion</a>
+        <p class="headerLog" style="font-size: 18px;"> <img src="http://localhost/monsite/coursphp/assets/user.png" alt="nom de l'utilisateur"> Bonjour <?php echo $_SESSION['name'];?> <img src="http://localhost/monsite/coursphp/assets/logout.png" alt="se déconnecter"> <a href="http://localhost/monsite/coursphp/backend/deconnexion.php">Déconnexion</a> <a href="liste_utilisateur.php">Liste des utilisateurs</a>
          <?php
      }
      else { ?>
