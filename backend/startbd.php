@@ -6,6 +6,7 @@ function bd(){
     // var_dump($conn);
     if ($conn->connect_error)
     die(sprintf('Unable to connect to the database. %s', $conn->connect_error));
+    $conn->query("SET NAMES utf8");
 
     // 2. Recuperer l utilisateur souhaité
     require "SimpleOrm.class.php";
