@@ -72,7 +72,6 @@ else {
     echo '<br/><br/><p style="color: red;">Mot de passe invalide.</p>';
     echo "<br/><br/>"."Veuillez vous reconnecter ".' <button><a href="../index.php" style="text-decoration: none;">Retour à la connexion</a></button>';
     
-
 }
 ?>
 <br/>

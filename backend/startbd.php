@@ -2,7 +2,7 @@
 
 
 function bd(){
-    $conn = new mysqli('127.0.0.1', 'root', 'root');
+    $conn = new mysqli('127.0.0.1', 'root', '');
     // var_dump($conn);
     if ($conn->connect_error)
     die(sprintf('Unable to connect to the database. %s', $conn->connect_error));
